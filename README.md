@@ -4,16 +4,18 @@ A modern Tetris game built with Kotlin and Jetpack Compose for Android. Create b
 
 ## Download APK
 
-### Latest Version (v1.3) - Recommended
-**[📱 Download tetris-android-v1.3.apk](./tetris-android-v1.3.apk)** (9.6MB)
+### Latest Version (v1.4) - Recommended
+**[📱 Download tetris-android-v1.4.apk](./tetris-android-v1.4.apk)** (9.6MB)
 
-**What's New in v1.3:**
-- 🎯 **UI FIX**: Fixed bottom row of game board being hidden by control buttons
-- 📐 Added proper bottom padding (80dp) to game area to ensure full visibility
-- 🎮 Adjusted game board size calculations for better fit
-- ✅ All game pieces now fully visible during gameplay
+**What's New in v1.4:**
+- 🎯 **RENDERING FIX**: Fixed white space area at bottom where dropped pieces were invisible
+- 🎮 Improved game board positioning to prevent overlap with controls
+- 📐 Optimized padding strategy - game board now properly positioned without blank areas
+- ✅ All dropped pieces now visible in their correct positions
 
 ### Previous Versions
+**[📱 Download tetris-android-v1.3.apk](./tetris-android-v1.3.apk)** (9.6MB) - ⚠️ White space at bottom, pieces invisible
+
 **[📱 Download tetris-android-v1.2.apk](./tetris-android-v1.2.apk)** (9.6MB) - ⚠️ Bottom row may be hidden by controls
 
 **[📱 Download tetris-android-v1.1.apk](./tetris-android-v1.1.apk)** (9.6MB) - ⚠️ Has piece disappearing bug on some devices
@@ -103,7 +105,13 @@ app/src/main/java/com/example/tetris/
 
 ## Version History
 
-### v1.3 (Latest)
+### v1.4 (Latest)
+- 🎯 **RENDERING FIX**: Fixed white space area at bottom where dropped pieces were invisible
+- 🎮 Improved game board positioning to prevent overlap with controls
+- 📐 Optimized padding strategy - game board now properly positioned without blank areas
+- ✅ All dropped pieces now visible in their correct positions
+
+### v1.3 ⚠️ (Known Issues)
 - 🎯 **UI FIX**: Fixed bottom row of game board being hidden by control buttons
 - 📐 Added proper bottom padding (80dp) to game area to ensure full visibility
 - 🎮 Adjusted game board size calculations for better fit
