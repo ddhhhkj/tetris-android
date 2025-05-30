@@ -1,6 +1,6 @@
 # Tetris Android Game
 
-A modern Tetris game built with Kotlin and Jetpack Compose for Android.
+A modern Tetris game built with Kotlin and Jetpack Compose for Android. Create by Google Jules ai and with minor modification by human
 
 ## Download APK
 
