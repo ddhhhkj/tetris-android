@@ -279,7 +279,7 @@ fun PreviewLevelStartAnimationView() {
 // Add the LevelStartAnimationView to the GameScreen's main Box or as a general overlay
 // For this integration, it will be added as an overlay covering the entire screen.
 @Composable
-fun GameScreenWithAllOverlays(gameManager: GameManager) {
+fun GameScreenWithAllOverlays(gameManager: GameManager, modifier: Modifier = Modifier) {
     val currentTetromino by gameManager.currentTetrominoFlow.collectAsState()
     val nextTetromino by gameManager.nextTetrominoFlow.collectAsState()
     val gameState by gameManager.gameStateFlow.collectAsState()
@@ -300,7 +300,7 @@ fun GameScreenWithAllOverlays(gameManager: GameManager) {
         }
     }
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = modifier.fillMaxSize()) {
         // Top section: Info panel - horizontal layout
         Row(
             modifier = Modifier
@@ -377,7 +377,8 @@ fun GameScreenWithAllOverlays(gameManager: GameManager) {
             currentGameState = gameState,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 8.dp)
+                .padding(horizontal = 16.dp, vertical = 16.dp)
+                .padding(bottom = 32.dp) // Extra bottom padding to avoid navigation bar
         )
     }
 }
@@ -385,8 +386,8 @@ fun GameScreenWithAllOverlays(gameManager: GameManager) {
 // Update the original GameScreen to use the new structure with all overlays
 // This replaces the previous GameScreen implementation.
 @Composable
-fun GameScreen(gameManager: GameManager) {
-    GameScreenWithAllOverlays(gameManager = gameManager)
+fun GameScreen(gameManager: GameManager, modifier: Modifier = Modifier) {
+    GameScreenWithAllOverlays(gameManager = gameManager, modifier = modifier)
 }
 
 @Preview(showBackground = true, widthDp = 400, heightDp = 600)

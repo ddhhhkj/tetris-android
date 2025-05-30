@@ -26,7 +26,8 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     GameScreen(
-                        gameManager = gameManager
+                        gameManager = gameManager,
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }

@@ -4,6 +4,15 @@ A modern Tetris game built with Kotlin and Jetpack Compose for Android. Create b
 
 ## Download APK
 
+### Latest Version (v1.1) - Recommended
+**[📱 Download tetris-android-v1.1.apk](./tetris-android-v1.1.apk)** (9.6MB)
+
+**What's New in v1.1:**
+- ✅ Fixed bottom control buttons being hidden by system navigation bar
+- ✅ Improved layout with proper system bar padding
+- ✅ Better user experience on devices with gesture navigation
+
+### Previous Version (v1.0)
 **[📱 Download tetris-android-v1.0.apk](./tetris-android-v1.0.apk)** (9.6MB)
 
 Ready to play! Just download and install on your Android device.
@@ -68,7 +77,7 @@ app/src/main/java/com/example/tetris/
 ## Installation
 
 ### Option 1: Download APK (Recommended)
-1. Download the APK file from the link above
+1. Download the latest APK file from the link above
 2. Enable "Install from Unknown Sources" in your Android settings
 3. Install the APK on your device
 4. Enjoy playing!
@@ -86,6 +95,19 @@ app/src/main/java/com/example/tetris/
 - Complete lines are cleared and award points
 - Game ends when pieces reach the top
 - Speed increases with each level (every 10 lines cleared)
+
+## Version History
+
+### v1.1 (Latest)
+- Fixed bottom control buttons being hidden by system navigation bar
+- Improved layout with proper system bar padding
+- Better user experience on devices with gesture navigation
+
+### v1.0
+- Initial release with complete Tetris gameplay
+- Modern UI with Jetpack Compose
+- Level progression and scoring system
+- Responsive layout for mobile devices
 
 ## Development Notes
 

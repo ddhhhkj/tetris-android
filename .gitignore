@@ -91,5 +91,6 @@ lint/tmp/
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
 
-# Exception: Allow the release APK in root directory
+# Exception: Allow the release APK files in root directory
 !tetris-android-v1.0.apk
+!tetris-android-v1.1.apk
