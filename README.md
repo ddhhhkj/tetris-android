@@ -4,16 +4,18 @@ A modern Tetris game built with Kotlin and Jetpack Compose for Android. Create b
 
 ## Download APK
 
-### Latest Version (v1.2) - Recommended
-**[📱 Download tetris-android-v1.2.apk](./tetris-android-v1.2.apk)** (9.6MB)
+### Latest Version (v1.3) - Recommended
+**[📱 Download tetris-android-v1.3.apk](./tetris-android-v1.3.apk)** (9.6MB)
 
-**What's New in v1.2:**
-- 🐛 **CRITICAL FIX**: Fixed game pieces disappearing after drop on Samsung Galaxy S24 Ultra and other devices
-- 🔧 Resolved layout modifier conflicts that affected game logic
-- ✅ Maintained bottom button improvements from v1.1
-- 🎮 Restored stable gameplay across all Android devices
+**What's New in v1.3:**
+- 🎯 **UI FIX**: Fixed bottom row of game board being hidden by control buttons
+- 📐 Added proper bottom padding (80dp) to game area to ensure full visibility
+- 🎮 Adjusted game board size calculations for better fit
+- ✅ All game pieces now fully visible during gameplay
 
 ### Previous Versions
+**[📱 Download tetris-android-v1.2.apk](./tetris-android-v1.2.apk)** (9.6MB) - ⚠️ Bottom row may be hidden by controls
+
 **[📱 Download tetris-android-v1.1.apk](./tetris-android-v1.1.apk)** (9.6MB) - ⚠️ Has piece disappearing bug on some devices
 
 **[📱 Download tetris-android-v1.0.apk](./tetris-android-v1.0.apk)** (9.6MB) - Stable but buttons may be hidden on some devices
@@ -101,11 +103,17 @@ app/src/main/java/com/example/tetris/
 
 ## Version History
 
-### v1.2 (Latest)
-- **CRITICAL FIX**: Fixed game pieces disappearing after drop on Samsung Galaxy S24 Ultra and other devices
-- Resolved layout modifier conflicts that affected game logic coordination
-- Maintained bottom button improvements from v1.1 while fixing gameplay issues
-- Restored stable gameplay across all Android devices
+### v1.3 (Latest)
+- 🎯 **UI FIX**: Fixed bottom row of game board being hidden by control buttons
+- 📐 Added proper bottom padding (80dp) to game area to ensure full visibility
+- 🎮 Adjusted game board size calculations for better fit
+- ✅ All game pieces now fully visible during gameplay
+
+### v1.2 ⚠️ (Known Issues)
+- 🐛 **CRITICAL FIX**: Fixed game pieces disappearing after drop on Samsung Galaxy S24 Ultra and other devices
+- 🔧 Resolved layout modifier conflicts that affected game logic
+- ✅ Maintained bottom button improvements from v1.1
+- 🎮 Restored stable gameplay across all Android devices
 
 ### v1.1 ⚠️ (Known Issues)
 - Fixed bottom control buttons being hidden by system navigation bar
