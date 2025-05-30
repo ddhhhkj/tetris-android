@@ -4,16 +4,18 @@ A modern Tetris game built with Kotlin and Jetpack Compose for Android. Create b
 
 ## Download APK
 
-### Latest Version (v1.4) - Recommended
-**[📱 Download tetris-android-v1.4.apk](./tetris-android-v1.4.apk)** (9.6MB)
+### Latest Version (v1.5) - Recommended
+**[📱 Download tetris-android-v1.5.apk](./tetris-android-v1.5.apk)** (9.6MB)
 
-**What's New in v1.4:**
-- 🎯 **RENDERING FIX**: Fixed white space area at bottom where dropped pieces were invisible
-- 🎮 Improved game board positioning to prevent overlap with controls
-- 📐 Optimized padding strategy - game board now properly positioned without blank areas
-- ✅ All dropped pieces now visible in their correct positions
+**What's New in v1.5:**
+- 🔧 **CRITICAL FIX**: Removed padding that was clipping the bottom of the game board
+- 🎯 Fixed invisible pieces issue by eliminating layout clipping
+- 📐 Optimized game board positioning using TopCenter alignment
+- ✅ All 20 rows of the game board now fully visible and functional
 
 ### Previous Versions
+**[📱 Download tetris-android-v1.4.apk](./tetris-android-v1.4.apk)** (9.6MB) - ⚠️ Bottom rows clipped by padding
+
 **[📱 Download tetris-android-v1.3.apk](./tetris-android-v1.3.apk)** (9.6MB) - ⚠️ White space at bottom, pieces invisible
 
 **[📱 Download tetris-android-v1.2.apk](./tetris-android-v1.2.apk)** (9.6MB) - ⚠️ Bottom row may be hidden by controls
@@ -105,7 +107,13 @@ app/src/main/java/com/example/tetris/
 
 ## Version History
 
-### v1.4 (Latest)
+### v1.5 (Latest)
+- 🔧 **CRITICAL FIX**: Removed padding that was clipping the bottom of the game board
+- 🎯 Fixed invisible pieces issue by eliminating layout clipping
+- 📐 Optimized game board positioning using TopCenter alignment
+- ✅ All 20 rows of the game board now fully visible and functional
+
+### v1.4 ⚠️ (Known Issues)
 - 🎯 **RENDERING FIX**: Fixed white space area at bottom where dropped pieces were invisible
 - 🎮 Improved game board positioning to prevent overlap with controls
 - 📐 Optimized padding strategy - game board now properly positioned without blank areas

@@ -324,17 +324,17 @@ fun GameScreenWithAllOverlays(gameManager: GameManager, modifier: Modifier = Mod
                 .fillMaxWidth()
                 .weight(1f) // Takes most of the screen
                 .padding(8.dp),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.TopCenter // Change to TopCenter to push board up
         ) {
             // Calculate optimal cell size based on available space
             val maxBoardWidth = 350.dp // Increased since no side panel
-            val maxBoardHeight = 650.dp // Restore reasonable height
+            val maxBoardHeight = 550.dp // Reduce height to leave space for controls
             val cellSizeByWidth = maxBoardWidth / 10 // 10 columns
             val cellSizeByHeight = maxBoardHeight / 20 // 20 rows
-            val optimalCellSize = minOf(cellSizeByWidth, cellSizeByHeight, 30.dp) // Restore max size
+            val optimalCellSize = minOf(cellSizeByWidth, cellSizeByHeight, 27.dp) // Slightly smaller
             
-            // Add padding to push the game board up slightly
-            Box(modifier = Modifier.padding(bottom = 60.dp)) {
+            // Remove the padding that was clipping the board
+            Box {
                 GameBoardView(
                     gameBoard = gameBoardState.gameBoard, // Extract GameBoard from wrapper
                     cellSize = optimalCellSize
