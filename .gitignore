@@ -94,3 +94,4 @@ lint/tmp/
 # Exception: Allow the release APK files in root directory
 !tetris-android-v1.0.apk
 !tetris-android-v1.1.apk
+!tetris-android-v1.2.apk

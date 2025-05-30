@@ -300,7 +300,7 @@ fun GameScreenWithAllOverlays(gameManager: GameManager, modifier: Modifier = Mod
         }
     }
 
-    Column(modifier = modifier.fillMaxSize()) {
+    Column(modifier = Modifier.fillMaxSize().then(modifier)) {
         // Top section: Info panel - horizontal layout
         Row(
             modifier = Modifier
