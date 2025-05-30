@@ -2,6 +2,12 @@
 
 A modern Tetris game built with Kotlin and Jetpack Compose for Android.
 
+## Download APK
+
+**[📱 Download tetris-android-v1.0.apk](./tetris-android-v1.0.apk)** (9.6MB)
+
+Ready to play! Just download and install on your Android device.
+
 ## Features
 
 - **Classic Tetris Gameplay**: All 7 standard Tetromino pieces (I, O, T, S, Z, J, L)
@@ -61,6 +67,13 @@ app/src/main/java/com/example/tetris/
 
 ## Installation
 
+### Option 1: Download APK (Recommended)
+1. Download the APK file from the link above
+2. Enable "Install from Unknown Sources" in your Android settings
+3. Install the APK on your device
+4. Enjoy playing!
+
+### Option 2: Build from Source
 1. Clone the repository
 2. Open in Android Studio
 3. Sync Gradle files
