@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Implement an extraction rule for deciding what files are backed up.
+             To learn more see https://developer.android.com/guide/topics/data/autobackup#Rules -->
+        <include
+            domain="sharedpref"
+            path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include
+            domain="sharedpref"
+            path="." />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO: Remove the following "exclude" elements to make them a part of the auto backup -->
+    <exclude
+        domain="database"
+        path="." />
+    <exclude
+        domain="sharedpref"
+        path="." />
+    <exclude
+        domain="external"
+        path="." />
+    <exclude
+        domain="root"
+        path="." />
+    <!-- Exclude specific shared preferences that contain sensitive data. -->
+    <!-- <exclude domain="sharedpref" path="key_to_sensitive_data.xml"/> -->
+</full-backup-content>
